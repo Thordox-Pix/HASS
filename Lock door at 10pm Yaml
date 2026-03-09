@@ -1,0 +1,23 @@
+alias: Lock front door at 10:00 PM
+description: Automatically locks the front door every night at 10:00 PM
+triggers:
+  - at: "22:00:00"
+    trigger: time
+conditions: []
+actions:
+  - action: lock.lock
+    data: {}
+    target:
+      entity_id: lock.front_door_lock
+    continue_on_error: true
+  - action: notify.mobile_app_23100rn82l
+    metadata: {}
+    data:
+      message: La puerta principal está cerrada
+      title: Puerta principal
+  - action: notify.mobile_app_danny_sm_s711b
+    metadata: {}
+    data:
+      message: The front door is locked
+      title: Front Door
+mode: single
