@@ -1,4 +1,4 @@
-#Home Assistant
+# Home Assistant
 
 Hardware: HP Prodesk 600 G1
 
@@ -10,7 +10,7 @@ SONOFF ZBDongle-E running custom Thread firmware
 
 SONOFF Zigbee Dongle Plus MG24
 
-#IOT Devices
+# IOT Devices
 
 2x MoesGo Tuya light switches
 
