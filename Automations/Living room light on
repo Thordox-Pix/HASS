@@ -1,0 +1,19 @@
+alias: Living Room Light On
+description: "Turn on living room light on person detection via Livingroom Camera"
+triggers:
+  - type: turned_on
+    device_id: 96d1a699bd4c390162c33a9fa54961d2
+    entity_id: 58a013a81e6e5875200df3a3a3502818
+    domain: binary_sensor
+    trigger: device
+conditions:
+  - condition: sun
+    before: sunrise
+    after: sunset
+actions:
+  - action: light.turn_on
+    metadata: {}
+    target:
+      device_id: 31c63548c7404076633e35edeb939f95
+    data: {}
+mode: single
